@@ -11,9 +11,7 @@ test:
   image: cypress/browsers:22.12.0
   stage: test
   script:
-    # install dependencies
     - npm ci
-    # run Cypress tests
     - npm run cy:run:chrome
   artifacts:
     when: always
